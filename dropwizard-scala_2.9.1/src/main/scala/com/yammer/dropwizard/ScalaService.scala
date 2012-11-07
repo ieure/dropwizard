@@ -2,7 +2,7 @@ package com.yammer.dropwizard
 
 import config.Configuration
 import bundles.ScalaBundle
-import com.codahale.jerkson.ScalaModule
+import com.simple.jerkson.ScalaModule
 
 abstract class ScalaService[T <: Configuration](name: String) extends AbstractService[T](name) {
   addBundle(new ScalaBundle(this))
