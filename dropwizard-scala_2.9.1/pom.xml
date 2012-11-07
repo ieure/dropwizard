@@ -8,6 +8,7 @@
         <version>0.5.1</version>
     </parent>
 
+    <groupId>com.simple</groupId>
     <artifactId>dropwizard-scala_2.9.1</artifactId>
     <name>Dropwizard for Scala ${scala.version}</name>
 
@@ -53,9 +54,9 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>com.codahale</groupId>
+            <groupId>com.simple</groupId>
             <artifactId>jerkson_${scala.version}</artifactId>
-            <version>0.6.0</version>
+            <version>0.6.4</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.codehaus.jackson</groupId>
