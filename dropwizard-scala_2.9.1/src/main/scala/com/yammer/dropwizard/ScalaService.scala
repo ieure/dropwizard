@@ -6,7 +6,7 @@ import com.simple.jerkson.ScalaModule
 
 abstract class ScalaService[T <: Configuration](name: String) extends AbstractService[T](name) {
   addBundle(new ScalaBundle(this))
-  addJacksonModule(new DefaultScalaModule)
+  addJacksonModule(new ScalaModule(Thread.currentThread().getContextClassLoader))
   override final def subclassServiceInsteadOfThis() {}
 
   final def main(args: Array[String]) {
